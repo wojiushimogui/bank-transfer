@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="mapper.BankAccountTransferLog">
+    <insert id="insert" parameterType="BankAccountTransferLog" >
+        INSERT INTO BankAccountTransferLog
+        (bankTransferTaskId,bankTransferTaskStatus,fromBankAccountId,toBankAccountId,money,status,descri)
+        VALUES
+        (#{bankTransferTaskId},#{bankTransferTaskStatus},#{fromBankAccountId},#{toBankAccountId},#{money},#{status},#{descri})
+    </insert>
+    <select id="queryById" parameterType="int" resultType="com.wrh.entity.BankAccountTransferLog">
+        SELECT * FROM BankAccountTransferLog WHERE ID=#{id}
+    </select>
+
+</mapper>
