@@ -11,8 +11,8 @@ public enum TransferStatus {
     MODIAF_RUNNING_TO_SUCCESS_STATUS_FAIL(3,"修改任务状态(running-->success)失败"),
     MODIAF_RUNNING_TO_FAIl_STATUS_FAIL(4,"修改任务状态(running-->fail)失败"),
     MODIFA_FROM_BANKACCOUNT_FAIL(5,"源账户扣除转账金额失败"),
-    MODIFA_TO_BANKACCOUNT_FAIL(5,"目标账户增加转账金额失败"),
-    SUCCESS(5,"转账成功");
+    MODIFA_TO_BANKACCOUNT_FAIL(6,"目标账户增加转账金额失败"),
+    SUCCESS(7,"转账成功");
 
 
     private int code;
