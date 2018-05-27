@@ -1,8 +1,6 @@
 package com.wrh.dto;
 
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -12,8 +10,6 @@ import java.math.BigDecimal;
  * @Description:
  * @Date:Created by 下午3:04 on 2018/5/27.
  */
-@Setter
-@Getter
 @NoArgsConstructor
 public class BankTransferTask implements Serializable{
     private int id;
